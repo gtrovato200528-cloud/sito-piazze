@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_caltanissetta.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza San Giovanni</h1>
+                <h2>Ragusa</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fotoragusa1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>Una piazza, mille storie</h1>
+                <p>Piazza San Giovannirappresenta uno degli spazi urbani più importanti della città di Ragusa ed è il centro principale di Ragusa Superiore. Ampia, luminosa e circondata da eleganti edifici, la piazza costituisce un punto di incontro fondamentale per la vita sociale dei cittadini. Nel corso del tempo è diventata un luogo simbolico della città, dove si intrecciano storia, architettura e quotidianità.</p>
+                <p>L’elemento dominante della piazza è la maestosaCattedrale di San Giovanni Battista, dedicata al patrono della città, Giovanni Battista. L’edificio fu ricostruito nel XVIII secolo in seguito al devastante Terremoto della Val di Noto del 1693, che distrusse gran parte dei centri abitati della Sicilia sud-orientale. </p>
+                <p>La cattedrale si distingue per la sua imponente facciata barocca, caratterizzata da ricche decorazioni, colonne e statue che creano un effetto scenografico molto suggestivo. L’ampia scalinata che conduce all’ingresso contribuisce a valorizzare ulteriormente la monumentalità dell’edificio.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fotoragusa2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Feste e tradizione</h1>
+                <p>La piazza non è soltanto uno spazio di grande valore storico e artistico, ma anche un luogo dinamico e vissuto quotidianamente. Attorno ad essa si trovano negozi, caffè e palazzi che animano la zona e la rendono uno dei punti più frequentati della città. Durante l’anno, inoltre, la piazza ospita eventi culturali, manifestazioni pubbliche e celebrazioni religiose dedicate al santo patrono, momenti che rafforzano il senso di comunità tra gli abitanti.</p>
+                <p>Passeggiare in Piazza San Giovanni significa immergersi nell’atmosfera autentica di Ragusa. La combinazione tra l’eleganza dell’architettura barocca, la presenza della cattedrale e la vivacità della vita cittadina rende questo luogo uno dei simboli più rappresentativi della città per chi desidera conoscere la storia e l’identità del territorio ragusano.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fotoragusa3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>

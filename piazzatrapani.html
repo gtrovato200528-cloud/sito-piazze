@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_trapani.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza Mercato del Pesce,</h1>
+                <h2>Agrigento</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fototrapani1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>Una porta per la città</h1>
+                <p>Piazza Mercato del Pesce è uno dei luoghi più caratteristici del centro storico della città di Trapani. Situata a pochi passi dal porto e dal lungomare, la piazza è storicamente legata alle attività di pesca e al commercio del pesce, che da secoli rappresentano una parte fondamentale dell’economia e della cultura locale. Grazie alla sua posizione vicino al mare, la piazza è sempre stata un punto di incontro tra pescatori, commercianti e cittadini.</p>
+                <p>Il mercato del pesce che si svolge in questa piazza è uno dei più antichi e tradizionali della città. Fin dalle prime ore del mattino, i pescatori portano il pescato fresco direttamente dalle barche, offrendo una grande varietà di prodotti del mare provenienti dal Mar Mediterraneo. </p>
+                <p>Il mercato è conosciuto per la sua atmosfera vivace e autentica, fatta di colori, profumi e richiami dei venditori che attirano l’attenzione dei clienti. Ad oggi è uno dei luoghi più frequentati nella città.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fototrapani2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Il fascino del mare</h1>
+                <p>Nel corso del tempo, la piazza è diventata non solo un luogo di commercio, ma anche uno spazio importante per la vita sociale della città. Attorno ad essa si trovano edifici storici, piccoli negozi e locali che contribuiscono ad animare la zona durante tutta la giornata. Questo rende la piazza un punto di riferimento sia per gli abitanti di Trapani sia per i turisti che desiderano conoscere le tradizioni e la cultura locale.</p>
+                <p>Oggi Piazza Mercato del Pesce continua a rappresentare uno dei simboli più autentici della città. Qui si possono osservare da vicino le antiche tradizioni marinare che ancora oggi caratterizzano Trapani, rendendo questo luogo un perfetto esempio del legame profondo tra la città e il mare.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fototrapani3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>

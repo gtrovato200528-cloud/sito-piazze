@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_caltanissetta.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza G. Garibaldi,</h1>
+                <h2>Caltanissetta</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fotocaltanissetta1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>Tra storia, fede e identità</h1>
+                <p>Piazza Garibaldi è la piazza principale e più rappresentativa della città di Caltanissetta. Situata nel centro storico, costituisce da secoli il fulcro della vita sociale, culturale e religiosa della comunità nissena. La piazza è dedicata a Giuseppe Garibaldi, figura centrale del processo di unificazione italiana, e rappresenta uno spazio simbolico in cui si intrecciano storia, tradizioni e vita quotidiana.</p>
+                <p>Uno degli elementi più caratteristici della piazza è la presenza di importanti edifici storici e religiosi che ne definiscono l’identità architettonica. Tra questi spicca la maestosa Cattedrale di Santa Maria la Nova, principale luogo di culto della città, costruita nel XVI secolo e successivamente arricchita con decorazioni barocche. </p>
+                <p>Di fronte alla cattedrale si trova lascenografica Fontana del Tritone, realizzata nel XIX secolo, che raffigura la figura mitologica del tritone e contribuisce a rendere la piazza uno spazio monumentale e suggestivo.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fotocaltanissetta2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Il cuore nisseno</h1>
+                <p>Nel corso della storia, Piazza Garibaldi ha ospitato numerosi eventi pubblici, celebrazioni religiose e manifestazioni civili, diventando un vero e proprio punto di incontro per i cittadini. Ancora oggi rappresenta un luogo centrale per la vita urbana: qui si svolgono feste tradizionali, raduni e momenti di socialità che mantengono viva l’identità culturale di Caltanissetta.</p>
+                <p>Oltre al suo valore storico e simbolico, la piazza è anche uno spazio di grande fascino turistico. Visitatori e residenti vi si ritrovano per passeggiare, ammirare l’architettura circostante e respirare l’atmosfera autentica del centro storico nisseno. Grazie alla sua posizione e alla ricchezza dei suoi monumenti, Piazza Garibaldi continua a rappresentare uno dei luoghi più significativi e riconoscibili della città.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fotocaltanissetta3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>

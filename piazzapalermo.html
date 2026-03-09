@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_palermo.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza Duomo,</h1>
+                <h2>Palermo</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fotopalermo1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>La piazza e le sue meraviglie</h1>
+                <p>Piazza Duomo si trova nel cuore del centro storico di Palermo ed è uno spazio molto significativo per la città. Qui si incontrano storia, arte e vita quotidiana. La piazza è un punto di riferimento sia per i cittadini sia per i turisti che visitano il capoluogo siciliano.</p>
+                <p>L’edificio principale della piazza è la Cattedrale di Palermo, dedicata a Maria Santissima Assunta. Fu costruita nel 1185 per volontà dell’arcivescovo Gualtiero Offamilio. Nel corso dei secoli ha subito molte modifiche, per questo oggi presenta uno stile che unisce elementi normanni, gotici, barocchi e neoclassici.</p>
+                <p>All’interno della cattedrale si trovano le tombe di importanti sovrani, come Federico II di Svevia e Ruggero II di Sicilia. Questo rende la piazza non solo un centro religioso, ma anche un luogo legato alla storia del Regno di Sicilia. All’interno della cattedrale si trova anche la famosa Torre dell’Orologio, che custodisce campane e orologi storici. Ogni giorno attira visitatori curiosi di ammirare il funzionamento dei meccanismi antichi e la vista panoramica dalla cima della torre.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fotopalermo2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Un tesoro da scoprire</h1>
+                <p>Oggi Piazza Duomo è uno spazio molto visitato e rappresenta uno dei simboli di Palermo. La sua bellezza architettonica e il suo valore storico la rendono una delle zone più importanti della città.</p>
+                <p>Sia la cattedrale sia gli altri palazzi conservano opere d’arte notevoli, come mosaici, statue e vetrate. Molti turisti si fermano ad ammirare le porte bronzee e le decorazioni interne, che raccontano storie religiose e storiche della Sicilia.</p>
+                <p>Piazza Duomo non è solo storia: è anche un luogo vivo. Spesso ospita mercati, eventi culturali e celebrazioni religiose. Gli spazi aperti e le panchine permettono ai cittadini di incontrarsi, fare una pausa o semplicemente godersi l’atmosfera della città.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fotopalermo3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>
+        

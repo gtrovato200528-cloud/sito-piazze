@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_catania.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza Duomo,</h1>
+                <h2>Catania</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fotocatania1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>Il cuore della città</h1>
+                <p>Piazza Duomo è il cuore pulsante della città di Catania, luogo di incontro tra cittadini e turisti. È il punto da cui si sviluppa gran parte del centro storico e rappresenta uno spazio simbolico per la vita sociale, culturale e religiosa della città.</p>
+                <p>Al centro della piazza domina la Cattedrale di Sant'Agata, dedicata alla patrona di Catania, Sant’Agata. Costruita nel XI secolo su resti di edifici precedenti, è stata ricostruita più volte a causa di terremoti ed eruzioni dell’Etna. La sua architettura unisce stili normanno, barocco e neoclassico.</p>
+                <p>Uno dei simboli più conosciuti di Piazza Duomo è la Fontana dell'Elefante, realizzata in granito e risalente al XVIII secolo. L’elefante, chiamato “u Liotru” dai catanesi, è il simbolo della città e rappresenta forza e protezione.</p>
+                <p>Oggi la piazza non è solo un luogo storico, ma anche uno spazio vivo, usato per eventi religiosi, feste cittadine e momenti di incontro quotidiano. La combinazione di arte, architettura e vita sociale la rende una delle piazze più importanti della Sicilia.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fotocatania2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Tra tradizione e armonia</h1>
+                <p>Oltre alla cattedrale, Piazza Duomo è circondata da edifici storici come il Palazzo degli Elefanti, sede del municipio, e antichi palazzi nobiliari. Questi edifici mostrano lo stile barocco siciliano, risultato della ricostruzione dopo il terremoto del 1693, e rendono la piazza un vero e proprio museo a cielo aperto.</p>
+                <p>Oltre alla Fontana dell’Elefante, in piazza si trovano altre fontane barocche e numerosi dettagli artistici, come statue, colonne e portali decorati. Questi elementi raccontano la storia della città e la sua tradizione artistica, molto legata al barocco siciliano.
+La piazza offre scorci fotografici unici e una vista spettacolare sull’architettura barocca.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fotocatania3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>
+        

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_siracusa.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza del Duomo,</h1>
+                <h2>Siracusa</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fotosiracusa1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>Tra mare e pietre</h1>
+                <p>Piazza del Duomo si trova nel punto più elevato dell’antica isola di Ortigia, nel centro storico di Siracusa, ed è considerata una delle piazze più affascinanti e scenografiche della Sicilia. Questo spazio urbano non è solo il centro religioso della città, ma anche un luogo dove si intrecciano secoli di storia mediterranea, dall’antichità classica alle più eleganti trasformazioni barocche del XVIII secolo.</p>
+                <p>La configurazione di Piazza del Duomo è insolita: la sua geometria irregolare e leggermente curva segue il terreno e l’antico tracciato dell’acropoli greca, creando un effetto armonico e dinamico. La pavimentazione in pietra chiara riflette la luce del sole, offrendo prospettive sempre diverse mentre ci si muove tra le facciate barocche che incorniciano lo spazio.</p>
+                <p>Il fulcro della piazza è la Cattedrale di Siracusa, dedicata alla Natività di Maria: un edificio che incorpora parti dell’antico Tempio dorico di Atena voluto dal tiranno Gelone nel 480 a.C. Nel corso dei secoli il tempio fu trasformato prima in chiesa cristiana, poi in moschea sotto la dominazione araba e infine ricostruito in stile barocco dopo il terremoto del 1693.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fotosiracusa2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Colonne antiche e armonia</h1>
+                <p>Intorno alla piazza si ergono splendidi edifici storici come il Palazzo Vermexio (sede del Municipio, con facciata barocca e dettagli scultorei) e il Palazzo Beneventano del Bosco, esempio raffinato di barocco siciliano. La piazza è anche luogo di vita quotidiana e incontro: chiusa al traffico, è un «salotto urbano» dove si svolgono eventi culturali, concerti, riti religiosi e dove turisti e cittadini si fermano ai tavolini dei caffè per godere dell’atmosfera senza tempo.</p>
+                <p>Piazza del Duomo non è solo un luogo da vedere ma da vivere con calma, camminando tra architetture secolari e respirando la storia che ogni pietra racconta. È un punto di arrivo e di partenza per esplorare Ortigia e Siracusa, un luogo dove ogni angolo svela un capitolo diverso della lunga storia della città.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fotosiracusa3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>
+        

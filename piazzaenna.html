@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_enna.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza F. P. Neglia,</h1>
+                <h2>Enna</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fotoenna1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>Il centro culturale di Enna</h1>
+                <p>Piazza Francesco Paolo Neglia è una delle piazze più importanti del centro storico della città di Enna. Situata in una posizione centrale lungo una delle vie principali, rappresenta un punto di riferimento per la vita sociale e culturale degli abitanti. La piazza è caratterizzata da uno spazio elegante e raccolto, circondato da edifici storici, negozi e locali che contribuiscono a renderla uno dei luoghi più frequentati della città.</p>
+                <p>La piazza è dedicata a Francesco Paolo Neglia, musicista e compositore originario di Enna vissuto tra il XIX e il XX secolo. Neglia fu una figura importante per la diffusione della cultura musicale nel territorio siciliano e a lui è intitolato anche il principale teatro cittadino, il Teatro Comunale Francesco Paolo Neglia, che si affaccia proprio sulla piazza. </p>
+                <p>Questo teatro rappresenta uno dei centri culturali più importanti della città, ospitando spettacoli teatrali, concerti, eventi musicali e manifestazioni culturali che coinvolgono cittadini e visitatori.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fotoenna2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Tra storia e movimento urbano</h1>
+                <p>Oltre alla sua dimensione culturale, Piazza Francesco Paolo Neglia è anche un luogo di incontro e socializzazione per i cittadini. La presenza di locali, negozi e spazi pubblici rende la piazza un ambiente vivace, soprattutto durante le ore serali e nei periodi di manifestazioni o eventi organizzati dal comune.</p>
+                <p>Grazie alla combinazione tra storia, cultura e vita quotidiana, Piazza Francesco Paolo Neglia rappresenta uno degli spazi urbani più significativi di Enna. La piazza non è solo un punto di passaggio, ma un luogo che contribuisce a raccontare l’identità culturale della città e il legame dei suoi abitanti con le tradizioni artistiche del territorio.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fotoenna3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>

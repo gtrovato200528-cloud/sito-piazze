@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_messina.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza Duomo,</h1>
+                <h2>Messina</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fotomessina1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>Arte e bellezze della piazza</h1>
+                <p>Piazza Duomo è la piazza principale del centro storico di Messina, luogo di incontro tra il patrimonio religioso, storico e civile cittadino. Si trova davanti alla Cattedrale (Duomo) della città, ed è considerata il cuore pulsante della vita messinese fin dal Medioevo.
+                La piazza è dominata dalla Cattedrale di Messina, dedicata a Santa Maria Assunta. L’edificio originario risale al XII secolo in stile normanno, ma è stato ricostruito più volte a causa di terremoti e danni, in particolare dopo il sisma del 1908.</p>
+                <p>Al centro della piazza si trova la Fontana di Orione, realizzata nel 1550 circa dallo scultore Giovanni Angelo Montorsoli, allievo di Michelangelo. La fontana rappresenta figure mitologiche e i quattro fiumi più celebri, ed è dedicata al leggendario fondatore di Messina, Orione. </p>
+                <p>Uno dei principali simboli di Piazza Duomo è il campanile dell’orologio astronomico, alto circa 60 m, famoso per essere uno dei più grandi e complessi al mondo. Tutti i giorni a mezzogiorno la torre si anima con figure meccaniche bronzee che raccontano scene storiche e leggende locali, attirando residenti e turisti.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fotomessina2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Un luogo importante <br>per la città<br></h1>
+                <p>Pur mantenendo il suo ruolo centrale nel tessuto urbano, Piazza Duomo ha subito numerose trasformazioni e ricostruzioni nel corso dei secoli, soprattutto dopo il devastante terremoto del 1908, che ne distrusse quasi completamente la struttura precedente. Gli edifici attuali includono stili architettonici diversi, frutto di ricostruzioni successive.</p>
+                <p>Oggi Piazza Duomo non è solo un luogo d’arte e di storia, ma anche un punto di ritrovo sociale per la città, circondata da caffè, edifici storici e spazi aperti che raccontano l’identità messinese tra passato e presente.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fotomessina3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>
+        

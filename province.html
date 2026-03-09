@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_due">
+         <div class="hero_due_img">
+                <img src="img/hero2.jpg" alt="">
+            </div>
+            <div class="hero_due_text">
+                <h1>Province</h1>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content_province">
+            <div class="content_province_container">
+                <div class="content_province_text">
+                <h1>Le province della Sicilia: <br> un mosaico di territori <br></h1>
+                <p>La Sicilia è composta da nove province storiche, ognuna con caratteristiche distintive che contribuiscono alla varietà del territorio dell’isola. Palermo, il capoluogo regionale, rappresenta uno dei principali centri politici e culturali; Catania si distingue per la sua vitalità economica e per la presenza dell’Etna; Messina è la porta della Sicilia verso la penisola italiana grazie alla sua posizione sullo Stretto. Queste province, insieme, costituiscono alcuni dei poli urbani più importanti dell’isola.</p>
+                <p>Altre province offrono scenari molto diversi ma altrettanto significativi. Agrigento è famosa per i suoi straordinari siti archeologici e per le sue coste affacciate sul Mediterraneo, mentre Trapani è conosciuta per le saline, i paesaggi costieri e le tradizioni marinare. Siracusa, con il suo ricco patrimonio storico di origine greca, e Ragusa, nota per le splendide città barocche, rappresentano due importanti esempi di eredità culturale e architettonica.</p>
+                <p>Infine, province come Enna e Caltanissetta raccontano l’anima più interna della Sicilia. Enna, situata nel cuore dell’isola, offre panorami collinari e una posizione panoramica unica, mentre Caltanissetta è storicamente legata alle attività minerarie e alle tradizioni dell’entroterra. Insieme, queste nove province formano un territorio ricco di identità diverse che, unite, definiscono la complessità e il fascino della Sicilia.</p>
+            </div>
+            <div class="content_province_img">
+                <div class="img_box">
+                    <img src="img/fotoprovince1.jpg" alt="">
+                    <span class="img_caption">Catania, costa ionica</span>
+                </div>
+                <div class="img_box">
+                    <img src="img/fotoprovince2.jpg" alt="">
+                    <span class="img_caption">Messina, sullo Stretto</span>
+                </div>
+            </div>
+            </div>
+            <div class="content_centrale_img">
+                <div class="img_box">
+                    <img src="img/fotoprovince3.jpg">
+                    <span class="img_caption">Palermo, tra mare e monti</span>
+                </div>
+                <div class="img_box">
+                    <img src="img/fotoprovince4.jpg">
+                    <span class="img_caption">Agrigento, tra templi antichi</span>
+                </div>
+            </div>
+            <div class="content_province_container">
+                <div class="content_province_img">
+                <div class="img_box">
+                    <img src="img/fotoprovince5.jpg" alt="">
+                    <span class="img_caption">Trapani, luce e saline</span>
+                </div>
+                <div class="img_box">
+                    <img src="img/fotoprovince6.jpg" alt="">
+                    <span class="img_caption">Siracusa, l’isola di Ortigia</span>
+                </div>
+            </div>
+                <div class="content_province_text">
+                <h1>Storia, cultura e tradizioni <br>delle province siciliane<br></h1>
+                <p>Le province siciliane custodiscono una storia millenaria, segnata dal passaggio di numerose civiltà. Fenici, Greci, Romani, Arabi e Normanni hanno lasciato tracce profonde nel territorio e nell’architettura delle città. Luoghi come Siracusa e Agrigento testimoniano ancora oggi l’importanza della Sicilia nel Mediterraneo antico, grazie a siti archeologici di grande valore storico.</p>
+                <p>La cultura delle province si esprime anche attraverso l’arte, la lingua e le tradizioni popolari. In molte città si svolgono feste religiose e sagre che celebrano prodotti tipici e santi patroni, momenti che rafforzano il senso di appartenenza delle comunità. La cucina varia da provincia a provincia, con piatti che riflettono le risorse locali e le influenze storiche ricevute nel corso dei secoli.</p>
+                <p>Infine, le province siciliane rappresentano oggi un equilibrio tra tradizione e modernità. Accanto ai centri storici e alle antiche tradizioni, si sviluppano attività economiche legate al turismo, all’agricoltura e ai servizi. Questa combinazione permette alla Sicilia di valorizzare il proprio patrimonio culturale mantenendo al tempo stesso uno sguardo al futuro.</p>
+            </div>
+            </div>
+        </section>
+        </main>
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+  <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>

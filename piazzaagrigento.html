@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorà Sicula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <div class="textheader">
+            <p><a href="index.html">Agorà Sicula</a></p>
+        <nav>
+            <ul>
+                <li><a href="contatti.html">chi siamo</a></li>
+                <li><a href="piazze.html">piazze</a></li>
+                <li><a href="province.html">province</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="hero_tre">
+         <div class="hero_tre_img">
+                <img src="img/hero_agrigento.jpg" alt="">
+            </div>
+            <div class="hero_tre_text">
+                <h1>Piazza G. Marconi,</h1>
+                <h2>Agrigento</h2>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="content">
+            <div class="content_img">
+                <img src="img/fotoagrigento1.jpg" alt="">
+            </div>
+            <div class="content_text">
+                <h1>Una porta per la città</h1>
+                <p>Piazza Guglielmo Marconi è una delle piazze più conosciute della città di Agrigento e rappresenta un importante punto di collegamento tra diverse aree urbane. Situata in una posizione strategica, la piazza è molto frequentata sia dai cittadini sia dai visitatori, poiché costituisce uno snodo fondamentale per gli spostamenti all’interno della città.</p>
+                <p>Il suo nome è dedicato a Guglielmo Marconi, celebre inventore italiano e pioniere delle comunicazioni radio. La piazza è caratterizzata da un’ampia area aperta che funge da punto di incontro e di passaggio per chi si muove tra il centro cittadino e altre zone di Agrigento.</p>
+                <p>Grazie alla sua posizione vicino alla stazione ferroviaria e alle principali vie di collegamento, rappresenta una sorta di “porta di accesso” alla città. Nel corso della giornata è animata dal continuo movimento di persone, autobus e automobili, diventando uno degli spazi urbani più dinamici della città.</p>
+            </div>
+        </section>
+        <section class="img_centrale">
+            <img src="img/fotoagrigento2.jpg" alt="">
+        </section>
+         <section class="content">
+            <div class="content_text">
+                <h1>Tra storia e movimento urbano</h1>
+                <p>Oltre alla sua funzione di snodo urbano, Piazza Marconi ha anche un valore sociale per la comunità locale. Molti cittadini vi transitano quotidianamente per lavoro, studio o svago, rendendola parte integrante della vita quotidiana agrigentina. La piazza contribuisce quindi a collegare diverse parti della città, favorendo gli scambi e le relazioni tra le persone.</p>
+                <p>Nel contesto urbano di Agrigento, Piazza Guglielmo Marconi assume dunque un ruolo importante non solo dal punto di vista logistico, ma anche come luogo simbolico di incontro e movimento. La sua posizione e la sua funzione la rendono uno degli spazi più riconoscibili e frequentati della città.</p>
+            </div>
+            <div class="content_img">
+                <img src="img/fotoagrigento3.jpg" alt="">
+            </div>
+        </section>
+        </main>
+        
+    <footer>
+        <div class="footer_contenitore">
+            <div class="footer_text">
+            <h3>Contatti</h3>
+            <p>Via dei Monumenti, 12 – 90133 Palermo (PA)</p>
+            <p>Telefono: +39 091 1234567</p>
+            <p> Email: info@piazzedisicilia.it</p>
+        </div>
+            <img src="img/icone.png" alt="">
+        </div>
+    </footer>
+      <div id="lightbox">
+    <div class="lightbox-content">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<script>
+const images = document.querySelectorAll("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close-lightbox");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>

@@ -196,12 +196,14 @@ header a {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 28px;
+    line-height: 1;
 }
 
 .card_text h3{
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 23px;
+    line-height: 1;
 }
 
 .card_text p {
